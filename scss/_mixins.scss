@@ -1,0 +1,29 @@
+@mixin fontStyle($f-weight, $f-size, $l-hight, $f-color) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-hight;
+  color: $f-color;
+}
+
+@mixin flexStyle($d-flex, $j-cont, $a-items, $f-direct, $gap) {
+  display: $d-flex;
+  justify-content: $j-cont;
+  align-items: $a-items;
+  gap: $gap;
+  flex-direction: $f-direct;
+}
+
+@mixin beforeLine() {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: $font_color_main;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 900px) {
+    top: -5px;
+  }
+}

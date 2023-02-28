@@ -1,0 +1,38 @@
+@keyframes burger {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes trade {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(7.89vw, 2.63vw);
+  }
+}
+
+@keyframes commerce {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-7.89vw, 2.63vw);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="modal" src="./js/maps_api.js"></script>
+    <title>Monticello</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__panel container">
+        <a class="logo scrollto" href="index.html"
+          ><img src="./img/svg/logo.svg" alt="logo image"
+        /></a>
+
+        <a class="logo logo_sm scrollto" href="index.html"
+          ><img class="logo__img" src="./img/logo-little.png" alt="logo image"
+        /></a>
+
+        <nav class="nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#about" class="list__link list__link_block scrollto"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="list__item">
+              <a href="#projects" class="list__link scrollto">PROJECTS</a>
+            </li>
+            <li class="list__item" id="nav-news">
+              <a href="#news" class="list__link scrollto">NEWS</a>
+            </li>
+            <li class="list__item">
+              <a href="#contact" class="list__link scrollto">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <span></span>
+        </div>
+
+        <div class="social">
+          <a
+            class="social__link social__link_facebook"
+            href="https://www.facebook.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social__link social__link_twitter"
+            href="https://www.twitter.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social__link social__link_instagram"
+            href="https://www.instagram.com/"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="slider nav-s" id="about">
+        <div class="slider-slide">
+          <div class="slider__content sl-content">
+            <h2 class="sl-content__title">SIMPLE & MODERN</h2>
+            <h4 class="sl-content__subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+            <a class="scrollto" href="#projects">
+              <img
+                class="sl-content__img"
+                src="./img/svg/arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <img
+            src="./img/oliver-wilms-IXrbu86N_t0-unsplash.webp"
+            alt=""
+            class="slider-slide__img"
+          />
+        </div>
+
+        <div class="slider-slide">
+          <div class="slider__content sl-content">
+            <h2 class="sl-content__title">COZY & INVITING</h2>
+            <h4 class="sl-content__subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+            <a class="scrollto" href="#projects">
+              <img
+                class="sl-content__img"
+                src="./img/svg/arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <img
+            src="./img/azzedine-rouichi-DWMdjZGP7nI-unsplash.webp"
+            alt=""
+            class="slider-slide__img"
+          />
+        </div>
+
+        <div class="slider-slide">
+          <div class="slider__content sl-content">
+            <h2 class="sl-content__title">SLEEK & ELEGANT</h2>
+            <h4 class="sl-content__subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+            <a class="scrollto" href="#projects">
+              <img
+                class="sl-content__img"
+                src="./img/svg/arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <img
+            src="./img/brother-yoon-s61aeI20sOU-unsplash.webp"
+            alt=""
+            class="slider-slide__img"
+          />
+        </div>
+
+        <div class="slider-slide">
+          <div class="slider__content sl-content">
+            <h2 class="sl-content__title">WARM & EFFICIENT</h2>
+            <h4 class="sl-content__subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+            <a class="scrollto" href="#projects">
+              <img
+                class="sl-content__img"
+                src="./img/svg/arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <img
+            src="./img/hossein-nasr-8UtkjdiqzRw-unsplash.webp"
+            alt=""
+            class="slider-slide__img"
+          />
+        </div>
+
+        <div class="slider-slide">
+          <div class="slider__content sl-content">
+            <h2 class="sl-content__title">SMART & STUNNING</h2>
+            <h4 class="sl-content__subtitle">
+              WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+            </h4>
+            <a class="scrollto" href="#projects">
+              <img
+                class="sl-content__img"
+                src="./img/svg/arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <img
+            src="./img/kasia-derenda-U9xKS6JpIj8-unsplash.webp"
+            alt=""
+            class="slider-slide__img"
+          />
+        </div>
+      </section>
+
+      <section class="projects container nav-s" id="projects">
+        <h1 class="projects__main-title title">WHAT WE DO</h1>
+
+        <div class="projects__box">
+          <div class="trade-img">
+            <img
+              id="trade-img"
+              class="projects__img"
+              src="./img/mask-group.png"
+              alt="mask-group"
+            />
+          </div>
+          <div class="projects__container">
+            <h3 class="projects__subtitle">ONE WORLD</h3>
+            <h2 class="projects__title title">TRADE CENTER</h2>
+            <p class="projects__text">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="projects__btn btn">MORE DETAILS</button>
+            <h5 class="projects__nav">
+              <img src="./img/svg/navigation.svg" alt="navigation-icon" /> New
+              York City, United States - 1776 feet
+            </h5>
+          </div>
+        </div>
+
+        <div class="projects__box projects__box_reverse">
+          <div class="commerce-img">
+            <img
+              id="commerce-img"
+              class="projects__img"
+              src="./img/photos-128.png"
+              alt="mask-group"
+            />
+          </div>
+          <div class="projects__container">
+            <h3 class="projects__subtitle">INTERNATIONAL</h3>
+            <h2 class="projects__title title">COMMERCE CENTRE</h2>
+            <p class="projects__text">
+              Successful businesses have many things in common, today we’ll look
+              at the big ‘R’ of recognition and how a digital advertising
+              network may help.
+            </p>
+            <button class="projects__btn btn">MORE DETAILS</button>
+            <h5 class="projects__nav">
+              <img src="./img/svg/navigation.svg" alt="navigation-icon" />Hong
+              Kong - 1588 feet
+            </h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="news nav-s" id="news">
+        <h2 class="news__title title">LATEST NEWS</h2>
+
+        <div class="n-slider container">
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/aqviews-1cJtY1v4wpI-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">
+                  SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                </h4>
+                <p class="n-slider__text">
+                  Free directories: directories are perfect for customers that
+                  are searching for...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/autor-1.png"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">ALJA BRUN</h5>
+                    <h6 class="n-slider__date">20 Jan 2020</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/hossein-nasr-8UtkjdiqzRw-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">EFFECTIVE ADVERTISING POINTERS.</h4>
+                <p class="n-slider__text">
+                  Having a home based business is a wonderful asset to your
+                  life...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/autor-2.png"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">DOMINIC FREEMAN</h5>
+                    <h6 class="n-slider__date">13 Dec 2019</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/brother-yoon-s61aeI20sOU-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">
+                  HYPNOTIZE YOURSELF INTO THE GHOST.
+                </h4>
+                <p class="n-slider__text">
+                  There are many things that are important to catalog design...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/autor-3.png"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">ALICE WARD</h5>
+                    <h6 class="n-slider__date">30 Nov 2019</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/azzedine-rouichi-DWMdjZGP7nI-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">
+                  HYPNOTIZE YOURSELF INTO THE GHOST.
+                </h4>
+                <p class="n-slider__text">
+                  There are many things that are important to catalog design...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/jolie.jpg"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">GELYA JOUL</h5>
+                    <h6 class="n-slider__date">6 Apr 2022</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/samuel-jeronimo-I3itbpJLA4g-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">
+                  HYPNOTIZE YOURSELF INTO THE GHOST.
+                </h4>
+                <p class="n-slider__text">
+                  There are many things that are important to catalog design...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/valentina.jpg"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">SVETLANA BOOTS</h5>
+                    <h6 class="n-slider__date">9 Aug 2021</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="n-slider__slide">
+              <img
+                src="./img/kasia-derenda-U9xKS6JpIj8-unsplash.webp"
+                alt="building photo"
+                class="n-slider__img"
+              />
+              <div class="n-slider__container">
+                <h4 class="n-slider__title">
+                  HYPNOTIZE YOURSELF INTO THE GHOST.
+                </h4>
+                <p class="n-slider__text">
+                  There are many things that are important to catalog design...
+                </p>
+
+                <div class="n-slider__box">
+                  <img
+                    src="./img/jenya.jpg"
+                    alt="autor"
+                    class="n-slider__photo"
+                  />
+                  <div>
+                    <h5 class="n-slider__name">JENYA MOM</h5>
+                    <h6 class="n-slider__date">30 Nov 2019</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery container">
+        <h2 class="gallery__title title">GALLERY</h2>
+        <div class="gallery__grid">
+          <div class="gallery__img gallery__img_big" id="img-big">
+            <img class="gallery__p" src="./img/photo_1.png.png" alt="build" />
+
+            <div class="photo__cover">
+              <img src="./img/plus.svg" class="photo__zoom" alt="plus" />
+            </div>
+          </div>
+
+          <div class="gallery__img" id="img-2">
+            <img class="gallery__p" src="./img/photo_2.png" alt="build" />
+            <div class="photo__cover">
+              <img src="./img/plus.svg" class="photo__zoom" alt="plus" />
+            </div>
+          </div>
+
+          <div class="gallery__img" id="img-3">
+            <img class="gallery__p" src="./img/photo_3.png.png" alt="build" />
+            <div class="photo__cover">
+              <img src="./img/plus.svg" class="photo__zoom" alt="plus" />
+            </div>
+          </div>
+
+          <div class="gallery__img" id="img-4">
+            <img class="gallery__p" src="./img/photo_4.png.png" alt="build" />
+            <div class="photo__cover">
+              <img src="./img/plus.svg" class="photo__zoom" alt="plus" />
+            </div>
+          </div>
+
+          <div class="gallery__img" id="img-5">
+            <img class="gallery__p" src="./img/photo_5.png.png" alt="build" />
+            <div class="photo__cover">
+              <img src="./img/plus.svg" class="photo__zoom" alt="plus" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__modal modal">
+          <div id="modal_background" class="modal__background">
+            <span class="modal__closebtn" id="modal_close">X</span>
+            <img id="modal_content" class="modal__content" alt="" />
+          </div>
+        </div>
+
+        <button class="gallery__btn btn">SEE MORE</button>
+      </section>
+
+      <section class="contacts nav-s" id="contact">
+        <div class="contacts__map" id="map"></div>
+
+        <div class="contacts__box">
+          <h2 class="contacts__title title">GET IN TOUCH</h2>
+          <div class="contacts__container">
+            <div class="contacts__wrap">
+              <a
+                href="https://www.google.com/maps/place/EMarchi+INC./@40.6422159,-73.9579592,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b489cdebf5b:0xf803a83ffd0c452d!8m2!3d40.6422119!4d-73.9557705!16s%2Fg%2F11c5rs017x?hl=uk"
+                class="contacts__link"
+                target="_blank"
+                ><img src="./img/nav-perpl.png" alt="nav-icon" /> 2241
+                Vanderveer Pl, Brooklyn, NY </a
+              ><a href="tel: +001 356-868-2454" class="contacts__link"
+                ><img src="./img/tel.png" alt="nav-icon" /> +001 356-868-2454</a
+              ><a href="mailto:montichello@service.com" class="contacts__link"
+                ><img
+                  src="./img/mail.png"
+                  alt="nav-icon"
+                />montichello@service.com</a
+              >
+              <p class="contacts__hours contacts__link">
+                <img src="./img/clock.png" alt="nav-icon" />From 07:05AM to
+                19:30PM
+              </p>
+            </div>
+
+            <form class="form">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Email" />
+
+              <button class="form__btn btn" type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div>
+          <a class="logo scrollto" href="index.html"
+            ><img src="./img/svg/logo.svg" alt="logo image"
+          /></a>
+
+          <h5 class="copyright">Copyrights © 2020 Montichello</h5>
+        </div>
+
+        <div class="social">
+          <a
+            class="social__link social__link_facebook"
+            href="https://www.facebook.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social__link social__link_twitter"
+            href="https://www.twitter.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social__link social__link_instagram"
+            href="https://www.instagram.com/"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvE_RMSpxoM87bJdWjABHqU8DxeSYJX0&callback=initMap"
+    ></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
