@@ -145,7 +145,7 @@
   }
 
   &__text {
-    @include fontStyle(400, 0.41rem, 25px, $font_color_main);
+    @include fontStyle(400, 0.41rem, 0.57rem, $font_color_main);
     font-family: "Open Sans";
   }
 

@@ -175,7 +175,7 @@
 .n-slider__text {
   font-weight: 400;
   font-size: 0.41rem;
-  line-height: 25px;
+  line-height: 0.57rem;
   color: #2c4058;
   font-family: "Open Sans";
 }
@@ -553,7 +553,7 @@ html {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.4rem;
-  line-height: 30px;
+  line-height: 0.68rem;
   color: #2c4058;
   margin: 1vw 0 8%;
 }
@@ -568,6 +568,7 @@ html {
 }
 .projects__img {
   max-width: 33vw;
+  min-width: 200px;
   display: block;
 }
 .projects__container {
@@ -613,18 +614,19 @@ html {
 .btn {
   width: 190px;
   height: 50px;
-  background-color: #ffffff;
+  background: #ffffff;
   border: 1px solid #2c4058;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  transition: all 200ms ease-in-out;
+  transition: all 1s ease;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #a18dec;
+  font-weight: 500;
+  background: linear-gradient(45deg, rgba(85, 183, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
   border-color: #a18dec;
 }
 
@@ -934,8 +936,9 @@ html {
 .form input {
   font-weight: 400;
   font-size: 0.4rem;
-  line-height: 18px;
+  line-height: 28px;
   color: #000000;
+  letter-spacing: 1px;
   border: none;
   border-bottom: 1px solid rgba(44, 64, 88, 0.2);
   width: 16.31vw;

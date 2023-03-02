@@ -277,7 +277,7 @@ html {
 
   &__text {
     font-family: "Open Sans";
-    @include fontStyle(400, 0.4rem, 30px, $font_color_main);
+    @include fontStyle(400, 0.4rem, 0.68rem, $font_color_main);
     margin: 1vw 0 8%;
   }
 
@@ -291,6 +291,7 @@ html {
 
   &__img {
     max-width: 33vw;
+    min-width: 200px;
     display: block;
   }
 
@@ -337,15 +338,16 @@ html {
 .btn {
   width: 190px;
   height: 50px;
-  background-color: $font_color_accent;
+  background: $font_color_accent;
   border: 1px solid $font_color_main;
   @include fontStyle(400, 14px, 17px, #000000);
-  transition: all 200ms ease-in-out;
+  transition: all 1s ease;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #a18dec;
+  font-weight: 500;
+  background: $header_bgrnd;
   border-color: #a18dec;
 }
 
@@ -619,7 +621,8 @@ html {
 }
 
 .form input {
-  @include fontStyle(400, 0.4rem, 18px, #000000);
+  @include fontStyle(400, 0.4rem, 28px, #000000);
+  letter-spacing: 1px;
   border: none;
   border-bottom: 1px solid rgb(44, 64, 88, 0.2);
   width: 16.31vw;
