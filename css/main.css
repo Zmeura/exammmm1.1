@@ -272,7 +272,7 @@
 }
 
 :root {
-  --header-height: 0px;
+  --header-height: 120px;
 }
 
 * {
