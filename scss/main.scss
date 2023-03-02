@@ -341,14 +341,22 @@ html {
   background: $font_color_accent;
   border: 1px solid $font_color_main;
   @include fontStyle(400, 14px, 17px, #000000);
-  transition: all 1s ease;
+  transition: all 400ms ease;
+  background: $font_color_accent;
 }
 
 .btn:hover {
   cursor: pointer;
   font-weight: 500;
-  background: $header_bgrnd;
+  background: rgb(161, 141, 236);
   border-color: #a18dec;
+  background: linear-gradient(
+    150deg,
+    rgb(214, 232, 242) 0%,
+    rgb(153, 138, 207) 25%,
+    rgba(214, 232, 242) 50%,
+    rgb(156, 133, 241) 100%
+  );
 }
 
 .title {
@@ -435,7 +443,7 @@ html {
   }
 
   &__btn {
-    margin: 4% auto 7.9vw;
+    margin: 5% auto 7.9vw;
     display: block;
   }
 }

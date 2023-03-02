@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".n-slider").slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     speed: 1500,
     dots: true,
