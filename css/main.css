@@ -461,7 +461,7 @@ html {
 }
 .list__item:hover {
   cursor: pointer;
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 @media (max-width: 900px) {
   .list__item {
