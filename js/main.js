@@ -1,5 +1,7 @@
 "use strict";
 
+//-------Animation with scroll------------
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -24,7 +26,7 @@ const observer_2 = new IntersectionObserver((entries) => {
 
 observer_2.observe(document.querySelector("#commerce-img"));
 
-// _____
+// -------Change header with scroll----------
 
 let header = document.querySelector(".header");
 const $window = $(window);
@@ -40,7 +42,8 @@ function onScroll() {
   }
 }
 
-// _____
+//-----------Soft Scroll------------
+
 $(".scrollto").on("click", function () {
   let href = $(this).attr("href");
 
@@ -57,10 +60,9 @@ $(".scrollto").on("click", function () {
   return false;
 });
 
-// __________________
+// -----------Modal Window-------------
 
 const photos = document.querySelectorAll(".gallery__img");
-
 const modal = document.getElementById("modal_background");
 const modalImage = document.getElementById("modal_content");
 
@@ -84,7 +86,7 @@ window.onclick = function (event) {
   }
 };
 
-// ________________
+// ------------Check MenuItem-----------
 
 function highlightMenuItem() {
   const navMenu = document.querySelector(".nav");
@@ -106,6 +108,8 @@ function highlightMenuItem() {
 }
 
 window.addEventListener("scroll", highlightMenuItem);
+
+// ------------Header hight------------
 
 window.addEventListener(
   `resize`,
