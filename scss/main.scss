@@ -59,7 +59,7 @@ html {
   height: --header-height;
 
   &__panel {
-    padding: 20px null;
+    padding: 30px;
     @include flexStyle(flex, space-between, center, null, 5.8vw);
   }
 
@@ -279,7 +279,7 @@ html {
   &__text {
     font-family: "Open Sans";
     @include fontStyle(400, 0.4rem, 30px, $font_color_main);
-    margin: 1vw 0 2.1vw;
+    margin: 1vw 0 8%;
   }
 
   &__nav {
@@ -434,7 +434,7 @@ html {
   }
 
   &__btn {
-    margin: 3vw auto 7.9vw;
+    margin: 4% auto 7.9vw;
     display: block;
   }
 }
@@ -565,6 +565,7 @@ html {
       left: 0;
       top: 0;
       transform: translateX(0);
+      padding: 6% 3%;
     }
   }
 
@@ -587,7 +588,7 @@ html {
   }
 
   &__wrap {
-    @include flexStyle(flex, center, null, column, 1.5vw);
+    @include flexStyle(flex, flex-start, null, column, 1.5vw);
   }
 
   &__link {
@@ -603,14 +604,15 @@ html {
 }
 
 .form {
-  @include flexStyle(flex, flex-start, null, column, 1.9vw);
-  padding: 10px 0;
+  @include flexStyle(flex, flex-start, null, column, 4vh);
+  padding: 3px 0;
 
   &__btn {
     font-size: 0.4rem;
     align-self: self-end;
     width: 140px;
     letter-spacing: 0.05em;
+    margin-top: 2%;
 
     @media (max-width: 580px) {
       align-self: center;

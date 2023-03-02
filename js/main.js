@@ -91,7 +91,7 @@ function highlightMenuItem() {
   const sections = document.querySelectorAll(".nav-s");
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
+    const sectionTop = section.offsetTop - 1;
     const sectionHeight = section.offsetHeight; //
     const sectionBottom = sectionTop + sectionHeight;
     const currentScroll = window.pageYOffset;
@@ -110,7 +110,7 @@ window.addEventListener("scroll", highlightMenuItem);
 window.addEventListener(
   `resize`,
   (event) => {
-    let headerHeight = $(".header").outerHeight(); //Высота хедера
+    let headerHeight = $(".header").outerHeight();
     document
       .querySelector(":root")
       .style.setProperty("--header-height", headerHeight + "px");

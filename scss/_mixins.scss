@@ -15,7 +15,7 @@
 
 @mixin beforeLine() {
   content: "";
-  width: 100px;
+  width: 10%;
   height: 1px;
   background-color: $font_color_main;
   position: absolute;
@@ -24,6 +24,6 @@
   transform: translateX(-50%);
 
   @media (max-width: 900px) {
-    top: -5px;
+    top: 1px;
   }
 }
